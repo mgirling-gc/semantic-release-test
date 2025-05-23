@@ -8,6 +8,6 @@ const rl = readLine.createInterface({
 console.log('Hello, GoCardless User!');
 
 rl.question('What is your nickname, friend? ', (name) => {
-  console.log(`Hello, ${name}!`);
+  console.log(`Hello, human. "${name}" is my favourite name!`);
   rl.close();
 });
