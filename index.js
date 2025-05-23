@@ -7,7 +7,7 @@ const rl = readLine.createInterface({
 
 console.log('Hello, GoCardless User!');
 
-rl.question('What is your name? ', (name) => {
+rl.question('What is your nickname? ', (name) => {
   console.log(`Hello, ${name}!`);
   rl.close();
 });
