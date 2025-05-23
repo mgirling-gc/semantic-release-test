@@ -5,7 +5,7 @@ const rl = readLine.createInterface({
   output: process.stdout
 });
 
-console.log('Hello, GoCardless User!');
+console.log('Howdy, GoCardless User!');
 
 rl.question('What is your nickname, friend? ', (name) => {
   console.log(`Hello, human. "${name}" is my favourite name!`);
