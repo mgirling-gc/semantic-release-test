@@ -1,0 +1,24 @@
+{
+  "name": "semantic-release-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgirling-gc/semantic-release-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgirling-gc/semantic-release-test/issues"
+  },
+  "homepage": "https://github.com/mgirling-gc/semantic-release-test#readme",
+  "devDependencies": {
+    "semantic-release": "^24.2.4"
+  }
+}
