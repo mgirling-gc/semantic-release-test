@@ -1,7 +1,5 @@
 const readLine = require('readline');
 
-console.log("Hello Universe!");
-
 const rl = readLine.createInterface({
   input: process.stdin,
   output: process.stdout
