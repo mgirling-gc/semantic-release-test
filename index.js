@@ -11,3 +11,7 @@ rl.question('What is your nickname, friend? ', (name) => {
   console.log(`Hello, human. "${name}" is my favourite name!`);
   rl.close();
 });
+
+rl.on('close', () => {
+  console.log('Have a nice day!');
+});
