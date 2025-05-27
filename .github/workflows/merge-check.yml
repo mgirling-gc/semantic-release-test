@@ -1,0 +1,46 @@
+name: Validate Last Commit
+
+on:
+  push:
+    branches:
+      - main # Or your release branch, e.g., 'develop'
+
+jobs:
+  validate_last_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch only the last commit to reduce clone time,
+          # but fetch enough to get the actual commit message.
+          # A depth of 1 is usually sufficient for checking the latest commit.
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Or your preferred Node.js version
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Get Last Commit Message
+        id: get_message
+        run: |
+          # Get the message of the very last commit that triggered this push
+          # GITHUB_SHA is the SHA of the head commit of the push.
+          COMMIT_MESSAGE=$(git log -1 --pretty=%B ${{ github.sha }})
+          # Output the message so it can be used by the next step
+          echo "COMMIT_MESSAGE<<EOF" >> $GITHUB_OUTPUT
+          echo "$COMMIT_MESSAGE" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Validate Last Commit Message
+        run: |
+          echo "${{ steps.get_message.outputs.COMMIT_MESSAGE }}" | npx commitlint --verbose
+        env:
+          # Optional: Set GITHUB_TOKEN if you have custom commitlint rules
+          # that rely on GitHub API (rare for basic linting)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
