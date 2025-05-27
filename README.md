@@ -1,3 +1,3 @@
 # semantic-release-test
 
-This is my test repo. Fun.
+This is my test repo.
