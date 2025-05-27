@@ -29,18 +29,11 @@ jobs:
       - name: Get Last Commit Message
         id: get_message
         run: |
-          # Get the message of the very last commit that triggered this push
-          # GITHUB_SHA is the SHA of the head commit of the push.
           COMMIT_MESSAGE=$(git log -1 --pretty=%B ${{ github.sha }})
-          # Output the message so it can be used by the next step
-          echo "COMMIT_MESSAGE<<EOF" >> $GITHUB_OUTPUT
-          echo "$COMMIT_MESSAGE" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          ENCODED_MESSAGE=$(echo -n "$COMMIT_MESSAGE" | base64 -w 0
+          echo "COMMIT_MESSAGE_BASE64=$ENCODED_MESSAGE" >> $GITHUB_OUTPUT
 
-      - name: Validate Last Commit Message
+      - name: Validate Last Commit Message Text
         run: |
-          echo "${{ steps.get_message.outputs.COMMIT_MESSAGE }}" | npx commitlint --verbose
-        env:
-          # Optional: Set GITHUB_TOKEN if you have custom commitlint rules
-          # that rely on GitHub API (rare for basic linting)
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DECODED_MESSAGE=$(echo "${{ steps.get_message_base64.outputs.COMMIT_MESSAGE_BASE64 }}" | base64 -d)
+          echo "$DECODED_MESSAGE" | npx commitlint --verbose
