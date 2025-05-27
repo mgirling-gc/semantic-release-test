@@ -1,0 +1,25 @@
+# .github/workflows/commitlint.yml
+name: Validate Pull Request Title
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, edited] # Runs on PR open, update, and edit
+
+jobs:
+  commitlint_pr_title:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install
+        run: npm ci
+
+      - name: Validate Pull Request Title
+        run: |
+          echo "${{ github.event.pull_request.title }}" | npx commitlint --verbose
