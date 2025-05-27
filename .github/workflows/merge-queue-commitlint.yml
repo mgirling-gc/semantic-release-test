@@ -1,0 +1,39 @@
+name: Validate Merge Queue Commit
+
+on:
+  merge_group: 
+
+jobs:
+  validate_commit_msg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Get Commit Message from Merge Group Head
+        id: get_message
+        run: |
+          COMMIT_MESSAGE=$(git log -1 --pretty=%B ${{ github.sha }})
+          echo "COMMIT_MESSAGE<<EOF" >> $GITHUB_OUTPUT
+          echo "$COMMIT_MESSAGE" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+        # Add a conditional to ensure this step only runs on merge_group event,
+        # although the job is typically configured to run only on merge_group.
+        if: github.event_name == 'merge_group'
+
+
+      - name: Validate Merge Group Commit Message
+        run: |
+          echo "${{ steps.get_message.outputs.COMMIT_MESSAGE }}" | npx commitlint --verbose
+        if: github.event_name == 'merge_group' # Ensure this only runs for merge_group
