@@ -7,10 +7,7 @@
     [
       "@semantic-release/commit-analyzer",
       {
-        "preset": "conventionalcommits",
-        "releaseRules": [
-          { "type": "*", "scope": "*", "subject": "*!", "release": "major" }
-        ]
+        "preset": "conventionalcommits"
       }
     ],
     "@semantic-release/release-notes-generator",
