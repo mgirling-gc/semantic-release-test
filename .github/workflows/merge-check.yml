@@ -31,7 +31,7 @@ jobs:
         run: |
           COMMIT_MESSAGE=$(git log -1 --pretty=%B ${{ github.sha }})
           DELIMITER="GH_ACTION_COMMIT_MESSAGE_END_$(date +%s%N)" 
-          echo "COMMIT_MESSAGE<<$DELIMETER" >> $GITHUB_OUTPUT
+          echo "COMMIT_MESSAGE<<$DELIMITER" >> $GITHUB_OUTPUT
           echo "$COMMIT_MESSAGE" >> $GITHUB_OUTPUT
           echo "$DELIMITER" >> $GITHUB_OUTPUT
 
