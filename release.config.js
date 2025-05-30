@@ -41,13 +41,10 @@ module.exports =  {
       {
         preset: "conventionalcommits",
         writerOpts: {
-            // transform: (commit, context) => {
-            //     if (commit.footer) {
-            //     commit.releaseNotes = commit.footer["release-notes"];
-            //     }
-            //     return commit;
-            // },
             commitPartial: commitTemplateContent
+        },
+        parserOpts: {
+          noteKeywords: ["RELEASE NOTES"]
         }
     },
     ],
