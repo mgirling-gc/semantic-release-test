@@ -1,3 +1,5 @@
+# [5.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v4.2.0...v5.0.0) (2025-05-30)
+
 # [4.2.0](https://github.com/mgirling-gc/semantic-release-test/compare/v4.1.5...v4.2.0) (2025-05-30)
 
 
