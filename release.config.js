@@ -14,7 +14,18 @@ let customWriterOpts;
     const { writerOpts: customWriterOpts } = await conventionalCommitsPreset();
 
 })
-module.exports =  {
+module.exports = () => {
+
+    
+//   customWriterOpts.transform = (commit, context) => {
+//               if (commit.footer) {
+//                 commit.releaseNotes = commit.footer["release-notes"];
+//               }
+//               return commit;
+//             }
+
+//             customWriterOpts.commitPartial = readFileSync(commitTemplatePath, 'utf8')
+    return {
   branches: [
     { name: "main" },
     { name: "maintenance-v1", range: "1.x.x" }
@@ -46,4 +57,4 @@ module.exports =  {
       }
     ]
   ]
-};
+};}
