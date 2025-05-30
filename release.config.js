@@ -41,6 +41,20 @@ module.exports =  {
       {
         preset: "conventionalcommits",
         writerOpts: {
+            transform: (commit, context) => {
+            // Find the index of your custom note
+            const customFooterIndex = commit.notes.findIndex(
+              (note) => note.title === 'RELEASE NOTES'
+            );
+
+            if (customFooterIndex > -1) {
+              const [customNote] = commit.notes.splice(customFooterIndex, 1);
+              commit.myCustomFooter = customNote.text;
+            }
+
+            // Return the modified commit object
+            return commit;
+          },
             commitPartial: commitTemplateContent
         },
         parserOpts: {
