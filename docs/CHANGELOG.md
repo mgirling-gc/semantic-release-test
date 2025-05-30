@@ -1,3 +1,14 @@
+## [7.2.1](https://github.com/mgirling-gc/semantic-release-test/compare/v7.2.0...v7.2.1) (2025-05-30)
+
+### ⚠ BREAKING CHANGES
+
+* 123445567
+* here they are
+
+### Bug Fixes
+
+* My custom template for try with finalizeContext. desc desc desc Release Notes: RELEASE NOTES: 123445567 * My custom template for we can only hope. desc desc desc Release Notes: RELEASE NOTES: here they are
+
 ## [7.2.0](https://github.com/mgirling-gc/semantic-release-test/compare/v7.1.0...v7.2.0) (2025-05-30)
 
 ### ⚠ BREAKING CHANGES
