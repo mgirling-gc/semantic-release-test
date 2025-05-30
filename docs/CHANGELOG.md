@@ -1,3 +1,9 @@
+## [6.2.10](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.9...v6.2.10) (2025-05-30)
+
+### Bug Fixes
+
+* My custom template for again. Release Notes: * My custom template for isolate problem. Release Notes: * My custom template for re-add to see what breaks. Release Notes: * My custom template for try with this. Release Notes:
+
 ## [6.2.9](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.8...v6.2.9) (2025-05-30)
 
 ### Bug Fixes
