@@ -1,3 +1,10 @@
+# [6.1.0](https://github.com/mgirling-gc/semantic-release-test/compare/v6.0.0...v6.1.0) (2025-05-30)
+
+
+### Features
+
+* change readme again ([5210aa6](https://github.com/mgirling-gc/semantic-release-test/commit/5210aa6e2359ea7dc322cdc7132f504dc0e5fd09))
+
 # [6.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v5.0.0...v6.0.0) (2025-05-30)
 
 
