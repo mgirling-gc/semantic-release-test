@@ -1,3 +1,9 @@
+## [6.2.11](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.10...v6.2.11) (2025-05-30)
+
+### Bug Fixes
+
+* My custom template for test fix. Release Notes:
+
 ## [6.2.10](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.9...v6.2.10) (2025-05-30)
 
 ### Bug Fixes
