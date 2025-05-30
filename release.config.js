@@ -1,3 +1,6 @@
+const { readFileSync } = require('fs');
+const path = require('path'); 
+const { resolve } = path; 
 
 const commitTemplatePath = resolve(__dirname, './commit-template.hbs');
 
