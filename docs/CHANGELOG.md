@@ -1,3 +1,9 @@
+## [6.2.0](https://github.com/mgirling-gc/semantic-release-test/compare/v6.1.0...v6.2.0) (2025-05-30)
+
+### Features
+
+* switch to release.config.js to enable extra info in release notes ([4a4df68](https://github.com/mgirling-gc/semantic-release-test/commit/4a4df6846f644f7e6490abede344f2050d344985))
+
 # [6.1.0](https://github.com/mgirling-gc/semantic-release-test/compare/v6.0.0...v6.1.0) (2025-05-30)
 
 
