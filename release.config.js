@@ -8,9 +8,13 @@ const commitTemplateContent = readFileSync(commitTemplatePath, 'utf8');
 console.log('Loaded commit template content:', commitTemplateContent.substring(0, 50));
 
 
-module.exports = async() => {
+let customWriterOpts;
 
+(async () => {
     const { writerOpts: customWriterOpts } = await conventionalCommitsPreset();
+
+})
+module.exports = () => {
 
     
   customWriterOpts.transform = (commit, context) => {
