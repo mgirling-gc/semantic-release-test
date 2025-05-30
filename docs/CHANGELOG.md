@@ -1,3 +1,9 @@
+## [6.2.3](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.2...v6.2.3) (2025-05-30)
+
+### Bug Fixes
+
+* test to see if template working ([83b469c](https://github.com/mgirling-gc/semantic-release-test/commit/83b469cd949e804f28c7f1cab7f00dde6747b63c))
+
 ## [6.2.2](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.1...v6.2.2) (2025-05-30)
 
 ### Bug Fixes
