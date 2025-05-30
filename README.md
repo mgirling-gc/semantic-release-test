@@ -1,3 +1,3 @@
 # semantic-release-test
 
-This is my test repo. Again. x7
+This is my test repo. Again. x8
