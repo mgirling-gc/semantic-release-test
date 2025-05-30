@@ -27,6 +27,7 @@ module.exports = async() => {
     { name: "maintenance-v1", range: "1.x.x" }
   ],
   plugins: [
+    false,
     "@semantic-release/github",
     [
       "@semantic-release/release-notes-generator",
