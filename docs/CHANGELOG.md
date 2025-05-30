@@ -1,3 +1,13 @@
+## [7.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.11...v7.0.0) (2025-05-30)
+
+### ⚠ BREAKING CHANGES
+
+* wow
+
+### Features
+
+* My custom template for hello. desc desc desc Release Notes: BREAKING CHANGE: wow
+
 ## [6.2.11](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.10...v6.2.11) (2025-05-30)
 
 ### Bug Fixes
