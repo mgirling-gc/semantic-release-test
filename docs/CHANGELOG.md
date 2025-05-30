@@ -1,3 +1,11 @@
+## [6.2.7](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.6...v6.2.7) (2025-05-30)
+
+### Bug Fixes
+
+* try this ([fa6cf97](https://github.com/mgirling-gc/semantic-release-test/commit/fa6cf97b7ccd5f9885e1b9c32378e27bf4023584))
+* unnest changes ([f56344a](https://github.com/mgirling-gc/semantic-release-test/commit/f56344a9285a432f2580fe37783d74506f6d41ce))
+* update conventional changelog writer ([158d449](https://github.com/mgirling-gc/semantic-release-test/commit/158d44989d2ea6e4e07a3f6c83960e74d409e48b))
+
 ## [6.2.6](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.5...v6.2.6) (2025-05-30)
 
 ### Bug Fixes
