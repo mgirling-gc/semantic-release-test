@@ -1,4 +1,6 @@
 
+const commitTemplatePath = resolve(__dirname, './commit-template.hbs');
+
 module.exports = {
   branches: [
     { name: "main" },
@@ -20,12 +22,7 @@ module.exports = {
               return commit;
             },
           },
-          partials: {
-              header: `
-                {{#if @root.commit.scope}}**{{scope}}:** {{/if}}**{{type}}**: {{subject}}
-                {{#if @root.commit.releaseNotes}} {{ @root.commit.releaseNotes }}{{/if}}
-              `,
-            },
+           commitPartial: readFileSync(commitTemplatePath, 'utf8'), 
         },
       },
     ],
