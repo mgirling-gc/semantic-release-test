@@ -1,3 +1,15 @@
+## [8.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v7.2.2...v8.0.0) (2025-05-30)
+
+### ⚠ BREAKING CHANGES
+
+* release notes 456
+BREAKING CHANGE: breaking change 123
+
+### Bug Fixes
+
+* My custom template for support breaking change. desc desc desc Release Notes: RELEASE NOTES: release notes 456
+BREAKING CHANGE: breaking change 123
+
 ## [7.2.2](https://github.com/mgirling-gc/semantic-release-test/compare/v7.2.1...v7.2.2) (2025-05-30)
 
 ### ⚠ BREAKING CHANGES
