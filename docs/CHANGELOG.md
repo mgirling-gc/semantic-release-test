@@ -1,3 +1,9 @@
+## [6.2.5](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.4...v6.2.5) (2025-05-30)
+
+### Bug Fixes
+
+* test if this works ([9ccd921](https://github.com/mgirling-gc/semantic-release-test/commit/9ccd9211b4b921e772fd95cb4d778c1abb888a99))
+
 ## [6.2.4](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.3...v6.2.4) (2025-05-30)
 
 ### Bug Fixes
