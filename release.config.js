@@ -18,7 +18,7 @@ module.exports = {
       "@semantic-release/release-notes-generator",
       {
         preset: "conventionalcommits",
-        presetConfig: {
+
 
           writerOpts: {
             transform: (commit, context) => {
@@ -31,7 +31,6 @@ module.exports = {
             commitPartial: readFileSync(commitTemplatePath, 'utf8'), 
           },
         },
-      },
     ],
     [
       "@semantic-release/commit-analyzer",
