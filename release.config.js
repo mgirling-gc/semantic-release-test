@@ -11,23 +11,23 @@ console.log('Loaded commit template content:', commitTemplateContent.substring(0
 let newWriterOpts;
 
 
-const getModifiedWriterOpts = async () => {
-    const { writerOpts: customWriterOpts } = await conventionalCommitsPreset();
-    customWriterOpts.transform = (commit, context) => {
-        if (commit.footer) {
-        commit.releaseNotes = commit.footer["release-notes"];
-        }
-        return commit;
-    }
+// const getModifiedWriterOpts = async () => {
+//     const { writerOpts: customWriterOpts } = await conventionalCommitsPreset();
+//     customWriterOpts.transform = (commit, context) => {
+//         if (commit.footer) {
+//         commit.releaseNotes = commit.footer["release-notes"];
+//         }
+//         return commit;
+//     }
 
-    customWriterOpts.commitPartial = readFileSync(commitTemplatePath, 'utf8')
+//     customWriterOpts.commitPartial = readFileSync(commitTemplatePath, 'utf8')
 
-    return customWriterOpts
-}
+//     return customWriterOpts
+// }
 
-(async () => {
-    newWriterOpts = await getModifiedWriterOpts()
-})()
+// (async () => {
+//     newWriterOpts = await getModifiedWriterOpts()
+// })()
 
 module.exports =  {
   branches: [
@@ -40,7 +40,15 @@ module.exports =  {
       "@semantic-release/release-notes-generator",
       {
         preset: "conventionalcommits",
-        writerOpts: newWriterOpts,
+        writerOpts: {
+            transform: (commit, context) => {
+                if (commit.footer) {
+                commit.releaseNotes = commit.footer["release-notes"];
+                }
+                return commit;
+            },
+            commitPartial: commitTemplateContent
+        }
     },
     ],
     [
