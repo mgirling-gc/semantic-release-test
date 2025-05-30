@@ -1,3 +1,13 @@
+# [6.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v5.0.0...v6.0.0) (2025-05-30)
+
+
+* fix!: update readme ([09b866e](https://github.com/mgirling-gc/semantic-release-test/commit/09b866e2eeaf5b9fe8cc1fa9836c6d486543d1a7))
+
+
+### BREAKING CHANGES
+
+* x, y and z
+
 # [5.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v4.2.0...v5.0.0) (2025-05-30)
 
 # [4.2.0](https://github.com/mgirling-gc/semantic-release-test/compare/v4.1.5...v4.2.0) (2025-05-30)
