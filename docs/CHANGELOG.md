@@ -1,3 +1,13 @@
+## [7.2.2](https://github.com/mgirling-gc/semantic-release-test/compare/v7.2.1...v7.2.2) (2025-05-30)
+
+### ⚠ BREAKING CHANGES
+
+* my release note
+
+### Bug Fixes
+
+* My custom template for debug. desc desc desc Release Notes: RELEASE NOTES: my release note
+
 ## [7.2.1](https://github.com/mgirling-gc/semantic-release-test/compare/v7.2.0...v7.2.1) (2025-05-30)
 
 ### ⚠ BREAKING CHANGES
