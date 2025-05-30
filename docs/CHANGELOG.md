@@ -1,3 +1,11 @@
+## [7.1.0](https://github.com/mgirling-gc/semantic-release-test/compare/v7.0.0...v7.1.0) (2025-05-30)
+
+### Features
+
+* My custom template for readme update. desc desc desc
+
+INFORMATION: 123445677 Release Notes:
+
 ## [7.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.11...v7.0.0) (2025-05-30)
 
 ### ⚠ BREAKING CHANGES
