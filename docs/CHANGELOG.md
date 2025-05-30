@@ -1,3 +1,9 @@
+## [6.2.9](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.8...v6.2.9) (2025-05-30)
+
+### Bug Fixes
+
+* re add for debug ([f6327f8](https://github.com/mgirling-gc/semantic-release-test/commit/f6327f8fb071f058b9ebd1fdac24403694d11bcf))
+
 ## [6.2.8](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.7...v6.2.8) (2025-05-30)
 
 ### Bug Fixes
