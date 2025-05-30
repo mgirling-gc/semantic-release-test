@@ -24,8 +24,7 @@ module.exports = {
       "@semantic-release/release-notes-generator",
       {
         preset: "conventionalcommits",
-        presetConfig: {
-
+        
           writerOpts: {
             transform: (commit, context) => {
               if (commit.footer) {
@@ -36,7 +35,6 @@ module.exports = {
           },
            commitPartial: commitTemplateContent, 
         },
-      },
     ],
     [
       "@semantic-release/changelog",
