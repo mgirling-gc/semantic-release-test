@@ -38,7 +38,7 @@ function finalizeContext (context) {
             console.log(commit.notes)
             console.log(commit.notes.notes)
             console.log("END")
-            commit.notes = commit.notes.filter((note) => note.title === "BREAKING CHANGE")
+            //commit.notes = commit.notes.filter((note) => note.title === "BREAKING CHANGE")
 		}
 	}
 
@@ -61,7 +61,7 @@ module.exports =  {
             commitPartial: commitTemplateContent
         },
         parserOpts: {
-          noteKeywords: ["RELEASE NOTES"]
+          noteKeywords: ["RELEASE NOTES", "BREAKING CHANGES"]
         }
     },
     ],
