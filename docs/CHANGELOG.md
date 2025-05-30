@@ -1,3 +1,13 @@
+## [7.2.0](https://github.com/mgirling-gc/semantic-release-test/compare/v7.1.0...v7.2.0) (2025-05-30)
+
+### ⚠ BREAKING CHANGES
+
+* testing 1234556
+
+### Features
+
+* My custom template for add parser opts. desc desc desc Release Notes: RELEASE NOTES: testing 1234556
+
 ## [7.1.0](https://github.com/mgirling-gc/semantic-release-test/compare/v7.0.0...v7.1.0) (2025-05-30)
 
 ### Features
