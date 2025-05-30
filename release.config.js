@@ -15,6 +15,12 @@ module.exports = {
   plugins: [
     "@semantic-release/github",
     [
+      "@semantic-release/commit-analyzer",
+      {
+        preset: "conventionalcommits"
+      }
+    ],
+    [
       "@semantic-release/release-notes-generator",
       {
         preset: "conventionalcommits",
@@ -31,12 +37,6 @@ module.exports = {
            commitPartial: commitTemplateContent, 
         },
       },
-    ],
-    [
-      "@semantic-release/commit-analyzer",
-      {
-        preset: "conventionalcommits"
-      }
     ],
     [
       "@semantic-release/changelog",
