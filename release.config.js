@@ -30,9 +30,14 @@ let newWriterOpts;
 // })()
 
 function finalizeContext (context) {
+
 	for (const commitGroup of context.commitGroups) {
+        console.log(commitGroup)
 		for (const commit of commitGroup.commits) {
+            console.log(commit)
             console.log(commit.notes)
+            console.log(commit.notes.notes)
+            console.log("END")
             commit.notes = commit.notes.filter((note) => note.title === "BREAKING CHANGE")
 		}
 	}
