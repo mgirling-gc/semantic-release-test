@@ -3,6 +3,9 @@ const path = require('path');
 const { resolve } = path; 
 
 const commitTemplatePath = resolve(__dirname, './commit-template.hbs');
+const commitTemplateContent = readFileSync(commitTemplatePath, 'utf8');
+console.log('Loaded commit template content:', commitTemplateContent.substring(0, 50));
+
 
 module.exports = {
   branches: [
@@ -25,7 +28,7 @@ module.exports = {
               return commit;
             },
           },
-           commitPartial: readFileSync(commitTemplatePath, 'utf8'), 
+           commitPartial: commitTemplateContent, 
         },
       },
     ],
