@@ -1,3 +1,18 @@
+## [6.2.8](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.7...v6.2.8) (2025-05-30)
+
+### Bug Fixes
+
+* and again... ([48b6acc](https://github.com/mgirling-gc/semantic-release-test/commit/48b6acc9586a8ffbb39b95392cadc33da7575eda))
+* debug if the isue is the export being aysnc ([babec96](https://github.com/mgirling-gc/semantic-release-test/commit/babec963e59794333c6b14d77e6b87d4a745c937))
+* debug if writer opts ([bb01325](https://github.com/mgirling-gc/semantic-release-test/commit/bb013254b1aa975aa7c08f8efd9b240f07cabc7c))
+* explicitly disable npm plugin ([0cf2c84](https://github.com/mgirling-gc/semantic-release-test/commit/0cf2c84b8c25c8b134ec0c84b0e0b3765b8092d6))
+* get rid of this entirely ([b167a5b](https://github.com/mgirling-gc/semantic-release-test/commit/b167a5bc1f1fafce1d27a356979743ad744d7485))
+* prevent autoloading npm plugin ([b775ecf](https://github.com/mgirling-gc/semantic-release-test/commit/b775ecff203a207ebfef61db910065e68c2640ae))
+* set private true in package.json ([7bdfff4](https://github.com/mgirling-gc/semantic-release-test/commit/7bdfff4ddc48170232e2d117247d0a42f0eb5815))
+* test ([f1fe042](https://github.com/mgirling-gc/semantic-release-test/commit/f1fe042f3b0fab074acb27e47d3de4adb1d20f34))
+* test fix ([5570a16](https://github.com/mgirling-gc/semantic-release-test/commit/5570a168b67da0a7778ea27809732696efac99a0))
+* try with a dummy npm token ([42588fa](https://github.com/mgirling-gc/semantic-release-test/commit/42588fadeffed520c04397647432e2ac3b080172))
+
 ## [6.2.7](https://github.com/mgirling-gc/semantic-release-test/compare/v6.2.6...v6.2.7) (2025-05-30)
 
 ### Bug Fixes
