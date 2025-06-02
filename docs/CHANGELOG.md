@@ -1,3 +1,10 @@
+## [8.0.11](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.10...v8.0.11) (2025-06-02)
+
+### Bug Fixes
+
+* test again ([903ba77]())
+  * release notes: my release notes
+
 ## [8.0.10](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.9...v8.0.10) (2025-06-02)
 
 ### Bug Fixes
