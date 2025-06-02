@@ -1,3 +1,10 @@
+## [8.1.0](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.12...v8.1.0) (2025-06-02)
+
+### Features
+
+* tidy up ([894d0b8]())
+  * my release notes about this feature to do with tidying the codebase bla bla bla bla
+
 ## [8.0.12](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.11...v8.0.12) (2025-06-02)
 
 ### Bug Fixes
