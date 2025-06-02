@@ -29,16 +29,26 @@ let newWriterOpts;
 //     newWriterOpts = await getModifiedWriterOpts()
 // })()
 
-function finalizeContext (context) {
+function findExtraReleaseNotes (commit) {
+    const releaseNotesRegex = /(\R|^)RELEASE NOTES:/i
 
+    if (releaseNotesRegex.test(commit.message)) {
+        // find index of first character after "RELEASE NOTES:"
+        const index = commit.message.indexOf("RELEASE NOTES:") + "RELEASE NOTES:".length + 1
+        
+        // get substring from index until next line break or end
+        commit.releaseNotes = commit.message.substring(index, commit.message.indexOf("\n", index))
+
+    }
+}
+
+function finalizeContext (context) {
 	for (const commitGroup of context.commitGroups) {
-        console.log(commitGroup)
 		for (const commit of commitGroup.commits) {
             console.log(commit)
-            console.log(commit.notes)
-            console.log(commit.notes.notes)
-            console.log("END")
-            //commit.notes = commit.notes.filter((note) => note.title === "BREAKING CHANGE")
+            findExtraReleaseNotes(commit)
+            console.log("release notes")
+            console.log(commit.releaseNotes)
 		}
 	}
 
@@ -60,9 +70,6 @@ module.exports =  {
             finalizeContext: finalizeContext,
             commitPartial: commitTemplateContent
         },
-        parserOpts: {
-          noteKeywords: ["RELEASE NOTES", "BREAKING CHANGES"]
-        }
     },
     ],
     [
