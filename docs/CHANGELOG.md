@@ -1,3 +1,14 @@
+## [9.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v8.1.0...v9.0.0) (2025-06-02)
+
+### ⚠ BREAKING CHANGES
+
+* this is a breaking change
+
+### Bug Fixes
+
+* tidying stuff up ([721f030]())
+  * these are my release notes about the feature
+
 ## [8.1.0](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.12...v8.1.0) (2025-06-02)
 
 ### Features
