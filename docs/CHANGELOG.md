@@ -1,3 +1,14 @@
+## [16.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v15.0.0...v16.0.0) (2025-06-02)
+
+### ⚠ BREAKING CHANGES
+
+* this will break things
+
+### Features
+
+* test combining release notes and breaking change ([8226a6a]())
+  * my release notes
+
 ## [15.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v14.0.0...v15.0.0) (2025-06-02)
 
 ### ⚠ BREAKING CHANGES
