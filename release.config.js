@@ -29,7 +29,7 @@ function finalizeContext (context) {
             //     commit.footer = commit.footer.replace('--END RELEASE NOTES--', '')        
             // }
 
-            commit.releaseNotes = commit['START RELEASE NOTES']
+            commit.releaseNotes = commit['RELEASE NOTES']
 
             console.log(commit)
             console.log(commit.footer)
