@@ -1,3 +1,13 @@
+## [15.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v14.0.0...v15.0.0) (2025-06-02)
+
+### ⚠ BREAKING CHANGES
+
+* breaking change description
+
+### Bug Fixes
+
+* test breaking change ([23af69c]())
+
 ## [14.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v13.0.0...v14.0.0) (2025-06-02)
 
 ### ⚠ BREAKING CHANGES
