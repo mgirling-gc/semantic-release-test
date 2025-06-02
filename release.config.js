@@ -18,10 +18,7 @@ function finalizeContext (context) {
 	for (const commitGroup of context.commitGroups) {
 		for (const commit of commitGroup.commits) {   
             commit.releaseNotes = commit['RELEASE NOTES']
-
             console.log(commit)
-            console.log(commit.footer)
-            console.log(commit.releaseNotes)
 		}
 	}
 
