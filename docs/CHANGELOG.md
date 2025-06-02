@@ -1,3 +1,11 @@
+## [10.0.1](https://github.com/mgirling-gc/semantic-release-test/compare/v10.0.0...v10.0.1) (2025-06-02)
+
+### Bug Fixes
+
+* release notes ([e1a3482]())
+  * here here
+and here again
+
 ## [10.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v9.0.0...v10.0.0) (2025-06-02)
 
 ### ⚠ BREAKING CHANGES
