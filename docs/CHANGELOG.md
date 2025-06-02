@@ -1,3 +1,10 @@
+## [8.0.8](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.7...v8.0.8) (2025-06-02)
+
+### Bug Fixes
+
+* indenting ([139342d]())
+* testing
+
 ## [8.0.7](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.6...v8.0.7) (2025-06-02)
 
 ### Bug Fixes
