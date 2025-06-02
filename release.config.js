@@ -17,12 +17,6 @@ function extractReleaseNotes(str) {
 function finalizeContext (context) {
 	for (const commitGroup of context.commitGroups) {
 		for (const commit of commitGroup.commits) {   
-            // Extract extra release notes from commit description
-            // commit.releaseNotes = extractReleaseNotes(commit.message)
-
-            // const footerReleaseNotes = extractReleaseNotes(commit.footer)
-            // commit.releaseNotes ||= footerReleaseNotes
-
             commit.releaseNotes = commit['RELEASE NOTES']
 
             console.log(commit)
