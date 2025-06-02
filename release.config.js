@@ -8,10 +8,10 @@ const commitTemplateContent = readFileSync(commitTemplatePath, 'utf8');
 console.log('Loaded commit template content:', commitTemplateContent.substring(0, 50));
 
 function findExtraReleaseNotes (commit) {
-    const releaseNotesRegex = /(\n|^)RELEASE NOTES:\s*[^\n|$]+/i
+    const releaseNotesRegex = /(\n|^)RELEASE NOTES:[^\n|$]+/i
     const match = releaseNotesRegex.exec(commit.message);
     if (match) {
-        commit.releaseNotes = match[1].trim();
+        commit.releaseNotes = match[0].trim();
     }
 }
 
