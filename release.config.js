@@ -11,7 +11,7 @@ function findExtraReleaseNotes (commit) {
     const releaseNotesRegex = /(\n|^)RELEASE NOTES:[^\n|$]+/i
     const match = releaseNotesRegex.exec(commit.message);
     if (match) {
-        commit.releaseNotes = match[0].trim();
+        commit.releaseNotes = match[0].substring("RELEASE NOTES:".length).trim()
     }
 }
 
