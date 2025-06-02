@@ -31,14 +31,10 @@ let newWriterOpts;
 
 function findExtraReleaseNotes (commit) {
     const releaseNotesRegex = /(\n|^)RELEASE NOTES:[^\n|$]+/i
-    console.log(commit.message)
-
-    var match = releaseNotesRegex.exec(commit.message);
+    const match = releaseNotesRegex.exec(commit.message);
     if (match) {
-        console.log("match found at " + match.index);
         const index = match.index + "RELEASE NOTES:".length + 1
-        commit.releaseNotes = commit.message.substring(index, match.lastIndex)
-        console.log(commit.releaseNotes)
+        commit.releaseNotes = commit.message.substring(index, match.lastIndex).trim()
     }
 }
 
