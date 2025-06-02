@@ -1,3 +1,9 @@
+## [8.0.1](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.0...v8.0.1) (2025-06-02)
+
+### Bug Fixes
+
+* My custom template for print release notes. RELEASE NOTES: test release note Release Notes:
+
 ## [8.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v7.2.2...v8.0.0) (2025-05-30)
 
 ### ⚠ BREAKING CHANGES
