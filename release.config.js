@@ -30,8 +30,8 @@ function finalizeContext (context) {
             }
 
             console.log(commit)
-            console.log(footer)
-            console.log(releaseNotes)
+            console.log(commit.footer)
+            console.log(commit.releaseNotes)
 		}
 	}
 
