@@ -1,3 +1,13 @@
+## [14.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v13.0.0...v14.0.0) (2025-06-02)
+
+### ⚠ BREAKING CHANGES
+
+* allow breaking change footer
+
+### Bug Fixes
+
+* allow breaking change footer ([7addcf9]())
+
 ## [13.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v12.0.0...v13.0.0) (2025-06-02)
 
 ### ⚠ BREAKING CHANGES
