@@ -1,3 +1,13 @@
+## [8.0.9](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.8...v8.0.9) (2025-06-02)
+
+### Bug Fixes
+
+* attempt to fix indenting again ([ff0fe77]())
+<br>  * my new release notes
+more text
+
+more text
+
 ## [8.0.8](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.7...v8.0.8) (2025-06-02)
 
 ### Bug Fixes
