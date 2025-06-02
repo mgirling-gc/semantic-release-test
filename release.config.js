@@ -31,13 +31,17 @@ let newWriterOpts;
 
 function findExtraReleaseNotes (commit) {
     const releaseNotesRegex = /(\R|^)RELEASE NOTES:/i
+    console.log(commit.message)
 
     if (releaseNotesRegex.test(commit.message)) {
+        console.log("found release notes")
         // find index of first character after "RELEASE NOTES:"
         const index = commit.message.indexOf("RELEASE NOTES:") + "RELEASE NOTES:".length + 1
+        console.log(index)
         
         // get substring from index until next line break or end
         commit.releaseNotes = commit.message.substring(index, commit.message.indexOf("\n", index))
+        console.log(commit.releaseNotes)
 
     }
 }
