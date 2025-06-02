@@ -1,17 +1,12 @@
 const { readFileSync } = require('fs');
 const path = require('path'); 
 const { resolve } = path; 
-const conventionalCommitsPreset = require('conventional-changelog-conventionalcommits');
-
 const commitTemplatePath = resolve(__dirname, './commit-template.hbs');
 const commitTemplateContent = readFileSync(commitTemplatePath, 'utf8');
-console.log('Loaded commit template content:', commitTemplateContent.substring(0, 50));
-
 
 function finalizeContext (context) {
 	for (const commitGroup of context.commitGroups) {
-		for (const commit of commitGroup.commits) {
-            
+		for (const commit of commitGroup.commits) {   
             // Extract extra release notes from commit description
             const releaseNotesRegex = /(\n|^)RELEASE NOTES:[^\n|$]+/i
             const match = releaseNotesRegex.exec(commit.message);
