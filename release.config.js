@@ -30,19 +30,15 @@ let newWriterOpts;
 // })()
 
 function findExtraReleaseNotes (commit) {
-    const releaseNotesRegex = /(\n|^)RELEASE NOTES:/i
+    const releaseNotesRegex = /(\n|^)RELEASE NOTES:[^\n|$]+/i
     console.log(commit.message)
 
-    if (releaseNotesRegex.test(commit.message)) {
-        console.log("found release notes")
-        // find index of first character after "RELEASE NOTES:"
-        const index = commit.message.indexOf("RELEASE NOTES:") + "RELEASE NOTES:".length + 1
-        console.log(index)
-        
-        // get substring from index until next line break or end
-        commit.releaseNotes = commit.message.substring(index, commit.message.indexOf("\n", index))
+    var match = releaseNotesRegex.exec(commit.message);
+    if (match) {
+        console.log("match found at " + match.index);
+        const index = match.index + "RELEASE NOTES:".length + 1
+        commit.releaseNotes = commit.message.substring(index, match.lastIndex)
         console.log(commit.releaseNotes)
-
     }
 }
 
