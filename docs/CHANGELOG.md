@@ -1,3 +1,16 @@
+## [11.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v10.0.1...v11.0.0) (2025-06-02)
+
+### ⚠ BREAKING CHANGES
+
+* look for release notes
+
+### Bug Fixes
+
+* look for release notes ([bcfc86f]())
+  * my new release notes
+
+BREAKING CHANGES: the breaking changes footer
+
 ## [10.0.1](https://github.com/mgirling-gc/semantic-release-test/compare/v10.0.0...v10.0.1) (2025-06-02)
 
 ### Bug Fixes
