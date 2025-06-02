@@ -1,3 +1,15 @@
+## [10.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v9.0.0...v10.0.0) (2025-06-02)
+
+### ⚠ BREAKING CHANGES
+
+* allow release notes to appear attempt #2
+* allow release notes to appear below breaking changes footer
+
+### Bug Fixes
+
+* allow release notes to appear attempt [#2](https://github.com/mgirling-gc/semantic-release-test/issues/2) ([ef00056]())
+* allow release notes to appear below breaking changes footer ([bd23d3f]())
+
 ## [9.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v8.1.0...v9.0.0) (2025-06-02)
 
 ### ⚠ BREAKING CHANGES
