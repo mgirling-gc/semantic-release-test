@@ -1,3 +1,9 @@
+## [8.0.3](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.2...v8.0.3) (2025-06-02)
+
+### Bug Fixes
+
+* My custom template for regex. RELEASE NOTES: test release notes Release Notes:
+
 ## [8.0.2](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.1...v8.0.2) (2025-06-02)
 
 ### Bug Fixes
