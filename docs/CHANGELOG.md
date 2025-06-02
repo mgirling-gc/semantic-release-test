@@ -1,3 +1,11 @@
+## [18.1.0](https://github.com/mgirling-gc/semantic-release-test/compare/v18.0.0...v18.1.0) (2025-06-02)
+
+### Features
+
+* **api:** add new api endpoint ([cb0cdb3]())
+
+    If you want to use this endpoint get in touch with me.
+
 ## [18.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v17.0.0...v18.0.0) (2025-06-02)
 
 ### ⚠ BREAKING CHANGES
