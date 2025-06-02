@@ -1,3 +1,14 @@
+## [12.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v11.0.0...v12.0.0) (2025-06-02)
+
+### ⚠ BREAKING CHANGES
+
+* breaking change
+
+### Bug Fixes
+
+* breaking change ([92e1856]())
+  * my release notes
+
 ## [11.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v10.0.1...v11.0.0) (2025-06-02)
 
 ### ⚠ BREAKING CHANGES
