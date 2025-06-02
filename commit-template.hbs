@@ -28,6 +28,10 @@
   {{~/if}}{{/each}}
 {{~/if}}
 
+{{#*inline "releaseNotesContent"}}
+{{releaseNotes}}
+{{/inline}}
+
 {{#if releaseNotes}}
-  * {{releaseNotes}}
+  {{> releaseNotesContent}}
 {{/if}}
