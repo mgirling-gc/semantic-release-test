@@ -1,3 +1,9 @@
+## [8.0.7](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.6...v8.0.7) (2025-06-02)
+
+### Bug Fixes
+
+* adjust template ([935f297]())* extra release notes
+
 ## [8.0.6](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.5...v8.0.6) (2025-06-02)
 
 ### Bug Fixes
