@@ -7,28 +7,6 @@ const commitTemplatePath = resolve(__dirname, './commit-template.hbs');
 const commitTemplateContent = readFileSync(commitTemplatePath, 'utf8');
 console.log('Loaded commit template content:', commitTemplateContent.substring(0, 50));
 
-
-let newWriterOpts;
-
-
-// const getModifiedWriterOpts = async () => {
-//     const { writerOpts: customWriterOpts } = await conventionalCommitsPreset();
-//     customWriterOpts.transform = (commit, context) => {
-//         if (commit.footer) {
-//         commit.releaseNotes = commit.footer["release-notes"];
-//         }
-//         return commit;
-//     }
-
-//     customWriterOpts.commitPartial = readFileSync(commitTemplatePath, 'utf8')
-
-//     return customWriterOpts
-// }
-
-// (async () => {
-//     newWriterOpts = await getModifiedWriterOpts()
-// })()
-
 function findExtraReleaseNotes (commit) {
     const releaseNotesRegex = /(\n|^)RELEASE NOTES:[^\n|$]+/i
     const match = releaseNotesRegex.exec(commit.message);
