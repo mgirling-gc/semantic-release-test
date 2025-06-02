@@ -1,3 +1,10 @@
+## [8.0.12](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.11...v8.0.12) (2025-06-02)
+
+### Bug Fixes
+
+* substring ([584fb26]())
+  * : release notes
+
 ## [8.0.11](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.10...v8.0.11) (2025-06-02)
 
 ### Bug Fixes
