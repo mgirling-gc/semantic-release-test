@@ -23,12 +23,6 @@ function finalizeContext (context) {
             // const footerReleaseNotes = extractReleaseNotes(commit.footer)
             // commit.releaseNotes ||= footerReleaseNotes
 
-            // if (footerReleaseNotes) {
-            //     commit.footer = commit.footer.replace('--START RELEASE NOTES--', '')
-            //     commit.footer = commit.footer.replace(footerReleaseNotes, '')
-            //     commit.footer = commit.footer.replace('--END RELEASE NOTES--', '')        
-            // }
-
             commit.releaseNotes = commit['RELEASE NOTES']
 
             console.log(commit)
