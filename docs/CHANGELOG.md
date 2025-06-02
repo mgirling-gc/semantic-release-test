@@ -1,3 +1,9 @@
+## [8.0.5](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.4...v8.0.5) (2025-06-02)
+
+### Bug Fixes
+
+* fix: template changes ([acbf30305cfc6828a1cde5e1535b4b358a682789](https://github.com/mgirling-gc/semantic-release-test/commit/acbf30305cfc6828a1cde5e1535b4b358a682789))
+
 ## [8.0.4](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.3...v8.0.4) (2025-06-02)
 
 ### Bug Fixes
