@@ -30,7 +30,7 @@ let newWriterOpts;
 // })()
 
 function findExtraReleaseNotes (commit) {
-    const releaseNotesRegex = /(\R|^)RELEASE NOTES:/i
+    const releaseNotesRegex = /(\n|^)RELEASE NOTES:/i
     console.log(commit.message)
 
     if (releaseNotesRegex.test(commit.message)) {
