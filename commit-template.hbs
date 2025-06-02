@@ -1,3 +1,4 @@
+{{!-- Default commit template for conventionalcommits --}}
 *{{#if scope}} **{{scope}}:**
 {{~/if}} {{#if subject}}
   {{~subject}}
@@ -28,10 +29,11 @@
   {{~/if}}{{/each}}
 {{~/if}}
 
+{{!-- Custom: add extra release notes with consistent indentation --}}
 {{#*inline "releaseNotesContent"}}
 {{releaseNotes}}
 {{/inline}}
 
 {{#if releaseNotes}}
-  {{> releaseNotesContent}}
+    {{> releaseNotesContent}}
 {{/if}}
