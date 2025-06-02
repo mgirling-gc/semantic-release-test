@@ -18,16 +18,18 @@ function finalizeContext (context) {
 	for (const commitGroup of context.commitGroups) {
 		for (const commit of commitGroup.commits) {   
             // Extract extra release notes from commit description
-            commit.releaseNotes = extractReleaseNotes(commit.message)
+            // commit.releaseNotes = extractReleaseNotes(commit.message)
 
-            const footerReleaseNotes = extractReleaseNotes(commit.footer)
-            commit.releaseNotes ||= footerReleaseNotes
+            // const footerReleaseNotes = extractReleaseNotes(commit.footer)
+            // commit.releaseNotes ||= footerReleaseNotes
 
-            if (footerReleaseNotes) {
-                commit.footer = commit.footer.replace('--START RELEASE NOTES--', '')
-                commit.footer = commit.footer.replace(footerReleaseNotes, '')
-                commit.footer = commit.footer.replace('--END RELEASE NOTES--', '')        
-            }
+            // if (footerReleaseNotes) {
+            //     commit.footer = commit.footer.replace('--START RELEASE NOTES--', '')
+            //     commit.footer = commit.footer.replace(footerReleaseNotes, '')
+            //     commit.footer = commit.footer.replace('--END RELEASE NOTES--', '')        
+            // }
+
+            commit.releaseNotes = commit['START RELEASE NOTES']
 
             console.log(commit)
             console.log(commit.footer)
