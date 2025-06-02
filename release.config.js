@@ -4,15 +4,34 @@ const { resolve } = path;
 const commitTemplatePath = resolve(__dirname, './commit-template.hbs');
 const commitTemplateContent = readFileSync(commitTemplatePath, 'utf8');
 
+
+function extractReleaseNotes(str) {
+    const releaseNotesRegex = /--START RELEASE NOTES--(.)+--END RELEASE NOTES--/i
+    const match = releaseNotesRegex.exec(str);
+    if (match) {
+        return match[0].substring("--START RELEASE NOTES--".length + 1, "--END RELEASE NOTES--".length).trim()
+    }
+    return null
+}
+
 function finalizeContext (context) {
 	for (const commitGroup of context.commitGroups) {
 		for (const commit of commitGroup.commits) {   
             // Extract extra release notes from commit description
-            const releaseNotesRegex = /(\n|^)RELEASE NOTES:[^\n|$]+/i
-            const match = releaseNotesRegex.exec(commit.message);
-            if (match) {
-                commit.releaseNotes = match[0].substring("RELEASE NOTES:".length + 1).trim()
+            commit.releaseNotes = extractReleaseNotes(commit.message)
+
+            const footerReleaseNotes = extractReleaseNotes(commit.footer)
+            commit.releaseNotes ||= footerReleaseNotes
+
+            if (footerReleaseNotes) {
+                commit.footer = commit.footer.replace('--START RELEASE NOTES--', '')
+                commit.footer = commit.footer.replace(footerReleaseNotes, '')
+                commit.footer = commit.footer.replace('--END RELEASE NOTES--', '')        
             }
+
+            console.log(commit)
+            console.log(footer)
+            console.log(releaseNotes)
 		}
 	}
 
