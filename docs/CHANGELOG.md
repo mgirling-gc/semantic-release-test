@@ -1,3 +1,16 @@
+## [18.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v17.0.0...v18.0.0) (2025-06-02)
+
+### ⚠ BREAKING CHANGES
+
+* a breaking change
+
+### Features
+
+* indentation change ([20b07eb]())
+
+    my release notes
+    multiline
+
 ## [17.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v16.0.0...v17.0.0) (2025-06-02)
 
 ### ⚠ BREAKING CHANGES
