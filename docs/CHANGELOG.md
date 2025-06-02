@@ -1,3 +1,9 @@
+## [8.0.6](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.5...v8.0.6) (2025-06-02)
+
+### Bug Fixes
+
+* use conventional commit template ([9569891]())
+
 ## [8.0.5](https://github.com/mgirling-gc/semantic-release-test/compare/v8.0.4...v8.0.5) (2025-06-02)
 
 ### Bug Fixes
