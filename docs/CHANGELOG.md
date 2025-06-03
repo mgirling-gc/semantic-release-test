@@ -1,3 +1,9 @@
+## [18.2.5](https://github.com/mgirling-gc/semantic-release-test/compare/v18.2.4...v18.2.5) (2025-06-03)
+
+### Bug Fixes
+
+* remove potentially unnecessary output of vars ([3110aac]())
+
 ## [18.2.4](https://github.com/mgirling-gc/semantic-release-test/compare/v18.2.3...v18.2.4) (2025-06-03)
 
 ### Bug Fixes
