@@ -1,3 +1,9 @@
+## [18.2.3](https://github.com/mgirling-gc/semantic-release-test/compare/v18.2.2...v18.2.3) (2025-06-03)
+
+### Bug Fixes
+
+* add outputs to release job ([96abe14]())
+
 ## [18.2.2](https://github.com/mgirling-gc/semantic-release-test/compare/v18.2.1...v18.2.2) (2025-06-03)
 
 ### Bug Fixes
