@@ -29,3 +29,21 @@ jobs:
         id: semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Output New Version
+        run: |
+          echo "new_release_published=${steps.semantic-release.outputs.new_release_published}" >> "$GITHUB_OUTPUT"
+          echo "new_version=${steps.semantic-release.outputs.new_release_version}" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: release
+    if: ${{ needs.release.outputs.new_release_published == 'true' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Log release version
+        run: |
+          echo "New release version: ${{ needs.release.outputs.new_version }}"
