@@ -1,3 +1,9 @@
+## [18.2.2](https://github.com/mgirling-gc/semantic-release-test/compare/v18.2.1...v18.2.2) (2025-06-03)
+
+### Bug Fixes
+
+* change deploy step ([2a1d2e7]())
+
 ## [18.2.1](https://github.com/mgirling-gc/semantic-release-test/compare/v18.2.0...v18.2.1) (2025-06-03)
 
 ### Bug Fixes
