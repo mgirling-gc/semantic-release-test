@@ -33,12 +33,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Output New Version
-        run: |
-          echo "new_release_published=${{ steps.semantic-release.outputs.new_release_published }}" >> "$GITHUB_OUTPUT"
-          echo "new_version=${{ steps.semantic-release.outputs.new_release_version }}" >> "$GITHUB_OUTPUT"
-          echo "new_release_major_version=${{ steps.semantic-release.outputs.new_release_major_version }}" >> "$GITHUB_OUTPUT"
-
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
