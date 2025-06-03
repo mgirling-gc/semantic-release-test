@@ -1,3 +1,9 @@
+## [18.2.1](https://github.com/mgirling-gc/semantic-release-test/compare/v18.2.0...v18.2.1) (2025-06-03)
+
+### Bug Fixes
+
+* bad substitution ([85ad2a5]())
+
 ## [18.2.0](https://github.com/mgirling-gc/semantic-release-test/compare/v18.1.0...v18.2.0) (2025-06-03)
 
 ### Features
