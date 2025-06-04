@@ -1,3 +1,15 @@
+## [20.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v19.0.0...v20.0.0) (2025-06-04)
+
+### ⚠ BREAKING CHANGES
+
+* But there's a breaking change
+
+### Miscellaneous Chores
+
+* update something ([111beb2]())
+
+    my release notes
+
 ## [19.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v18.3.1...v19.0.0) (2025-06-04)
 
 ### ⚠ BREAKING CHANGES
