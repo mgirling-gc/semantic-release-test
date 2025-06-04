@@ -1,3 +1,11 @@
+## [18.3.1](https://github.com/mgirling-gc/semantic-release-test/compare/v18.3.0...v18.3.1) (2025-06-04)
+
+### Bug Fixes
+
+* test uninstall ([55d2055]())
+
+    release notes
+
 ## [18.3.0](https://github.com/mgirling-gc/semantic-release-test/compare/v18.2.5...v18.3.0) (2025-06-04)
 
 ### Features
