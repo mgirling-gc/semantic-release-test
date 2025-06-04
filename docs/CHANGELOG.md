@@ -1,3 +1,17 @@
+## [19.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v18.3.1...v19.0.0) (2025-06-04)
+
+### ⚠ BREAKING CHANGES
+
+* breaking changesss
+
+### Bug Fixes
+
+* revert ([a4c293b]())
+
+* test ([e2cc745]())
+
+    my release notes
+
 ## [18.3.1](https://github.com/mgirling-gc/semantic-release-test/compare/v18.3.0...v18.3.1) (2025-06-04)
 
 ### Bug Fixes
