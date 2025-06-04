@@ -1,3 +1,16 @@
+## [18.3.0](https://github.com/mgirling-gc/semantic-release-test/compare/v18.2.5...v18.3.0) (2025-06-04)
+
+### Features
+
+* try to run release flow without installing dependencies and passing inputs instead ([7f9ae83]())
+
+
+### Bug Fixes
+
+* add conventional commits dependency ([dffa4d1]())
+
+    my release notes
+
 ## [18.2.5](https://github.com/mgirling-gc/semantic-release-test/compare/v18.2.4...v18.2.5) (2025-06-03)
 
 ### Bug Fixes
