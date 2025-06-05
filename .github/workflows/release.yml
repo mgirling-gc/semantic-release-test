@@ -1,10 +1,13 @@
-name: Release
+name: Release and Deploy
 
 on:
   push:
-    branches:
-      - main
-      - maintenance-v1
+    branches: [master]
+
+permissions:
+  contents: read
+  packages: read
+  id-token: write # We need write access to the id-token so we can use workload identity federation
 
 jobs:
   release:
@@ -14,6 +17,7 @@ jobs:
       new_release_published: ${{ steps.semantic-release.outputs.new_release_published }}
       new_version: ${{ steps.semantic-release.outputs.new_release_version }}
       new_release_major_version: ${{ steps.semantic-release.outputs.new_release_major_version }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -22,7 +26,6 @@ jobs:
         uses: cycjimmy/semantic-release-action@v4
         id: semantic-release
         with:
-          # You can specify specifying version range for the extra plugins if you prefer.
           extra_plugins: |
             @semantic-release/changelog@^6.0.3
             @semantic-release/git@^10.0.1
@@ -30,28 +33,48 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  deploy:
-    name: Deploy
+  build:
+    name: Build
     runs-on: ubuntu-latest
     needs: release
-    if: ${{ needs.release.outputs.new_release_published }}
     steps:
-      - name: Checkout
+      - name: Log build
+        run: |
+          echo "building..."
+
+
+
+  deploy-latest:
+    name: Deploy Latest
+    needs: 
+      - build
+      - release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log deploy latest
+        run: |
+          echo "Deploy to /latest"
+
+
+  staging-test:
+    name: Post Deploy Latest Playwright Tests
+    needs: deploy-latest
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Fail job
+        run: exit 1
+
+  deploy:
+    name: Deploy Version Aliases
+    needs: 
+      - release
+      - staging-test
+    runs-on: ubuntu-latest
+    if: ${{ needs.release.outputs.new_release_published }}
+    steps:
       - name: Log release version
         run: |
           echo "New release version: ${{ needs.release.outputs.new_version }}"
-
-
-      - name: Deploy to latest alias
-        run: |
-          echo "Deploying to /latest"
-
-      - name: Deploy to major version alias
-        run: |
-          echo "Deploying to /v${{ needs.release.outputs.new_release_major_version }}"
-
-      - name: Deploy to specific version alias
-        run: |
-          echo "Deploying to /v${{ needs.release.outputs.new_version }}"
