@@ -85,7 +85,7 @@ jobs:
       - release
       - staging-test
     runs-on: ubuntu-latest
-    if: ${{ needs.release.outputs.new_release_published == "true"}}
+    if: ${{ needs.release.outputs.new_release_published == 'true'}}
     steps:
       - name: Log release version
         run: |
