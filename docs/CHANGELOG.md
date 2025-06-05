@@ -1,3 +1,16 @@
+## [20.1.0](https://github.com/mgirling-gc/semantic-release-test/compare/v20.0.0...v20.1.0) (2025-06-05)
+
+### Features
+
+* trial workflow ([9424812]())
+
+
+### Bug Fixes
+
+* change content perms to write access ([6bd6e80]())
+
+* rename branch ([45cb112]())
+
 ## [20.0.0](https://github.com/mgirling-gc/semantic-release-test/compare/v19.0.0...v20.0.0) (2025-06-04)
 
 ### ⚠ BREAKING CHANGES
