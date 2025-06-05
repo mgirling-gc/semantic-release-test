@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 permissions:
-  contents: read
+  contents: write
   packages: read
   id-token: write # We need write access to the id-token so we can use workload identity federation
 
