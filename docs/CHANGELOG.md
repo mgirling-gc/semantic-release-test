@@ -1,3 +1,11 @@
+## [20.1.1](https://github.com/mgirling-gc/semantic-release-test/compare/v20.1.0...v20.1.1) (2025-06-05)
+
+### Bug Fixes
+
+* new release ([2036bb0]())
+
+* remove dependency ([4cf84d3]())
+
 ## [20.1.0](https://github.com/mgirling-gc/semantic-release-test/compare/v20.0.0...v20.1.0) (2025-06-05)
 
 ### Features
