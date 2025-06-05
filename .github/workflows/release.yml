@@ -10,8 +10,46 @@ permissions:
   id-token: write # We need write access to the id-token so we can use workload identity federation
 
 jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: release
+    steps:
+      - name: Log build
+        run: |
+          echo "building..."
+
+      - name: Log release published
+        run: |
+          echo "New release published: ${{ needs.release.outputs.new_release_published }}"
+
+
+
+  deploy-latest:
+    name: Deploy Latest
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log deploy latest
+        run: |
+          echo "Deploy to /latest"
+
+
+  staging-test:
+    name: Post Deploy Latest Playwright Tests
+    needs: deploy-latest
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Succeed job
+        run: exit 0
+
   release:
     name: Release
+    needs: staging-test
     runs-on: ubuntu-latest
     outputs:
       new_release_published: ${{ steps.semantic-release.outputs.new_release_published }}
@@ -41,49 +79,9 @@ jobs:
         run: |
           echo "New release version: ${{ steps.semantic-release.outputs.new_release_version }}"
 
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    needs: release
-    steps:
-      - name: Log build
-        run: |
-          echo "building..."
-
-      - name: Log release published
-        run: |
-          echo "New release published: ${{ needs.release.outputs.new_release_published }}"
-
-
-
-  deploy-latest:
-    name: Deploy Latest
-    needs: 
-      - build
-      - release
-    runs-on: ubuntu-latest
-    steps:
-      - name: Log deploy latest
-        run: |
-          echo "Deploy to /latest"
-
-
-  staging-test:
-    name: Post Deploy Latest Playwright Tests
-    needs: deploy-latest
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Succeed job
-        run: exit 0
-
   deploy:
     name: Deploy Version Aliases
-    needs: 
-      - release
-      - staging-test
+    needs: release
     runs-on: ubuntu-latest
     if: ${{ needs.release.outputs.new_release_published == 'true'}}
     steps:
