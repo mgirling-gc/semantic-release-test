@@ -1,3 +1,9 @@
+## [20.2.1](https://github.com/mgirling-gc/semantic-release-test/compare/v20.2.0...v20.2.1) (2025-06-06)
+
+### Bug Fixes
+
+* try this ([26cbc9f]())
+
 ## [20.2.0](https://github.com/mgirling-gc/semantic-release-test/compare/v20.1.4...v20.2.0) (2025-06-06)
 
 ### Features
