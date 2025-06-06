@@ -31,7 +31,6 @@ module.exports =  {
     { name: "maintenance-v1", range: "1.x.x" }
   ],
   plugins: [
-    "@semantic-release/github",
     [
       "@semantic-release/release-notes-generator",
       {
@@ -54,6 +53,8 @@ module.exports =  {
         changelogFile: "docs/CHANGELOG.md"
       }
     ],
+    "@semantic-release/npm",
+    "@semantic-release/github",
     [
       "@semantic-release/git",
       {
