@@ -1,3 +1,13 @@
+## [20.1.2](https://github.com/mgirling-gc/semantic-release-test/compare/v20.1.1...v20.1.2) (2025-06-06)
+
+### Bug Fixes
+
+* add read-only npm token ([a222462]())
+
+* put temp npm token in action ([d02cfda]())
+
+* update package.json ([b773225]())
+
 ## [20.1.1](https://github.com/mgirling-gc/semantic-release-test/compare/v20.1.0...v20.1.1) (2025-06-05)
 
 ### Bug Fixes
