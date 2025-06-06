@@ -1,3 +1,11 @@
+## [20.1.4](https://github.com/mgirling-gc/semantic-release-test/compare/v20.1.3...v20.1.4) (2025-06-06)
+
+### Bug Fixes
+
+* add package.json to assets list ([0a4b52e]())
+
+    this should ensure package.json version change is updated
+
 ## [20.1.3](https://github.com/mgirling-gc/semantic-release-test/compare/v20.1.2...v20.1.3) (2025-06-06)
 
 ### Bug Fixes
