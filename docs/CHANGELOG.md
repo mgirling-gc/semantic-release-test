@@ -1,3 +1,11 @@
+## [20.2.2](https://github.com/mgirling-gc/semantic-release-test/compare/v20.2.1...v20.2.2) (2025-06-06)
+
+### Bug Fixes
+
+* cleanup ([a2bef11]())
+
+* try with .ts ([76550f2]())
+
 ## [20.2.1](https://github.com/mgirling-gc/semantic-release-test/compare/v20.2.0...v20.2.1) (2025-06-06)
 
 ### Bug Fixes
