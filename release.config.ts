@@ -25,7 +25,7 @@ function finalizeContext (context) {
 	return context
 }
 
-module.exports =  {
+const config =  {
   branches: [
     { name: "main" },
     { name: "maintenance-v1", range: "1.x.x" }
@@ -68,3 +68,5 @@ module.exports =  {
     ]
   ]
 };
+
+export default config;
