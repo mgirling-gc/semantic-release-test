@@ -1,6 +1,6 @@
 const { readFileSync } = require('fs');
-const path = require('path'); 
-const { resolve } = path; 
+const { resolve } = require('path');
+
 const commitTemplatePath = resolve(__dirname, './commit-template.hbs');
 const commitTemplateContent = readFileSync(commitTemplatePath, 'utf8');
 
@@ -25,7 +25,7 @@ function finalizeContext (context) {
 	return context
 }
 
-const config =  {
+module.exports =  {
   branches: [
     { name: "main" },
     { name: "maintenance-v1", range: "1.x.x" }
@@ -68,5 +68,3 @@ const config =  {
     ]
   ]
 };
-
-export default config;
