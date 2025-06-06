@@ -69,7 +69,7 @@ jobs:
             conventional-changelog-conventionalcommits@^9.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: fake_token
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
 
       - name: Log release published
         run: |
