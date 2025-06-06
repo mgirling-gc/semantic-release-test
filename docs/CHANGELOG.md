@@ -1,3 +1,11 @@
+## [20.1.3](https://github.com/mgirling-gc/semantic-release-test/compare/v20.1.2...v20.1.3) (2025-06-06)
+
+### Bug Fixes
+
+* set npmPublish to false ([2a07f62]())
+
+    this should stop the CI job from failing
+
 ## [20.1.2](https://github.com/mgirling-gc/semantic-release-test/compare/v20.1.1...v20.1.2) (2025-06-06)
 
 ### Bug Fixes
